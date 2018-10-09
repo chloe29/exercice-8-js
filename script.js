@@ -1,8 +1,12 @@
 function valid(){
   var age = document.getElementById('age').value;
-  if (age >= 18){
-    alert('Vous êtes majeur');
+    if(isNaN(age) || age < 1){
+      alert('En chiffre !');
   }else{
-    alert('Vous êtes mineur');
+    if (age >= 18){
+      alert('Vous êtes majeur !');
+    }else{
+      alert('Vous êtes mineur !');
+    }
   }
 }
